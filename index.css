@@ -1068,12 +1068,10 @@
   width: 110.5px;
   height: 16px;
 }
-.button3,
-.form {
+
+.button3 {
   position: absolute;
   height: 45px;
-}
-.button3 {
   top: calc(50% - 22.5px);
   left: calc(50% + 70.8px);
   border-radius: var(--br-7xs);
@@ -1084,20 +1082,22 @@
   font-family: var(--font-rubik);
 }
 .form {
-  top: calc(50% + 28.5px);
-  left: calc(50% - 440.8px);
-  width: 881.6px;
+  top: 58%;
+  margin: auto;
+  width: 70%;
   text-align: left;
   font-size: 12.8px;
   font-family: var(--font-inter);
+  position: relative;
+  height: 20%;
 }
 .background5 {
-  top: calc(50% - 73.8px);
-  left: calc(50% - 460.8px);
+  margin: auto;
+  top: 25%;
   border-radius: 20px;
   background-color: #1048d788 ;
-  width: 970.6px;
-  height: 257px;
+  width: 75%;
+  height: 50%;
   overflow: hidden;
   color: white;
   position: relative;
@@ -1705,4 +1705,38 @@ button:hover{
 .nav-linkk:hover::after {
   width: 100%; /* Expand the underline to full width on hover */
   left: 0; /* Move the starting position to the left */
+}
+
+
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+.background{
+  display: none;
+}
+.background5{
+  width: 95%;
+}
+.form{
+  width: 80%;
+  height: 40%;
+  margin: auto;
+}
+.input,.button3{
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  
+}
+.button3{
+  height: 43%;
+  width: 45%;
+}
+.input{
+  align-items: center;
+  width: 85%;
+  height: 43%;
+  margin-bottom: 2%;
+}
 }
